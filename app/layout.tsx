@@ -12,8 +12,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "AhladaHomes - Property Management System",
-  description: "Comprehensive property management solution for owners, tenants, and maintenance staff",
+  title: "Ahlada Homes - Best Properties In Hyderabad",
+  description: "Find premium homes, apartments, and plots in Hyderabad with trusted guidance from Ahlada Homes.",
   generator: "SJ Media Labs",
 }
 
