@@ -1,4 +1,4 @@
-# Propmediate - Premium Real Estate Platform
+# Ahlada Homes - Premium Real Estate Platform
 
 A full-stack MERN application built with Next.js and MongoDB for showcasing premium real estate properties with advanced search, filtering, and admin management.
 
@@ -20,7 +20,7 @@ This is a Next.js full-stack application with:
 2. **Set up environment variables:**
    Create a `.env.local` file in the root directory:
    \`\`\`bash
-   MONGODB_URI=mongodb://localhost:27017/propmediate
+   MONGODB_URI=
    JWT_SECRET=your-super-secret-jwt-key-here
    PORT=3000
    \`\`\`
@@ -45,7 +45,6 @@ The application will be available at http://localhost:3000
 ## Features
 
 - 🏠 Property listings with advanced search and filtering
-- 👥 User management and agent profiles
 - 🔍 Property comparison and detailed views
 - 📱 Responsive design with modern UI
 - 🔐 Complete admin dashboard for content management
@@ -132,8 +131,7 @@ propmediate-app/
 
 ### User
 - Authentication and profile information
-- Role-based access (user, agent, admin)
-- Agent-specific information and ratings
+- Role-based access (user)
 
 ### Property
 - Complete property details and media
@@ -143,7 +141,6 @@ propmediate-app/
 ### Inquiry
 - User inquiries for properties
 - Contact information and status tracking
-- Agent assignment and scheduling
 
 ## Development
 
@@ -155,8 +152,8 @@ propmediate-app/
 
 ### Default Admin Credentials
 After running `npm run create-admin`:
-- **Email**: admin@propmediate.com
-- **Password**: Admin@123
+- **Email**: 
+- **Password**: Admin@12345
 
 ### Sample Data
 The seed script creates:
