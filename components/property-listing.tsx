@@ -305,7 +305,7 @@ if (filters.constructionStatus.length > 0) {
       // update URL query param (preserve pathname)
       const qp = new URLSearchParams()
       qp.set("rentBuy", next)
-      router.replace(`${pathname}?${qp.toString()}`)
+      router.replace(`${pathname}?${qp.toString()}`, { scroll: false })
       return
     }
 

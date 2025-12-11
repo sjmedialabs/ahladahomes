@@ -12,7 +12,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "BNRHomes - Property Management System",
+  title: "AhladaHomes - Property Management System",
   description: "Comprehensive property management solution for owners, tenants, and maintenance staff",
   generator: "SJ Media Labs",
 }

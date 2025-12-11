@@ -9,6 +9,7 @@ import PropertyTypeSelector from "@/components/property-type-selector"
 import EnhancedPropertyForm from "@/components/properties/EnhancedPropertyForm"
 import Image from "next/image";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { toast } from "@/components/ui/use-toast"
 
 
 type PropertyCardProps = {
@@ -829,7 +830,6 @@ const fetchProperties = useCallback(async () => {
     let allProperties: Property[] = data.data || []
 
     setProperties(allProperties)
-    console.log("Fetched properties:", allProperties)
   } catch (error) {
     console.error(error)
     alert("Failed to fetch properties")
@@ -873,12 +873,17 @@ const handleSaveProperty = async (
         const response = await fetch(`/api/properties/${editingProperty._id}`, {
         method : "PUT",  
         })
-        if (response.ok) await fetchProperties()
+        if (response.ok){ await fetchProperties()
+          alert("Property updated successfully")
+        }
+
       } else {
         const response = await fetch("/api/properties", {
           method: "POST",
         })
-        if (response) await fetchProperties()
+        if (response){ await fetchProperties()
+          alert("Property added successfully")
+        }
       }
       setShowForm(false)
     } catch (error) {
